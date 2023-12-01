@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logopokemon {
+    width: 50%; /* para cambiar el tamaño de la imagen */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.buscar {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buscar input {
+    border: 0;
+    outline: 0;
+    background: #ffffff;
+    color: #000000;
+    padding: 10px 10px;
+    height: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 16px;
+    border: 2px solid #3565AE; /* Agrega un borde azul alrededor del cuadro de entrada */
+}
+
+.buscar button {
+    border: 0;
+    outline: 0;
+    background: #ffffff;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: 2px solid #3565AE; /* Agrega un borde azul alrededor del botón */
+}
+
+.buscar button img {
+    width: 16px;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none; /* none para que no se muestre */
+    font-family: 'Poppins', sans-serif;
+    color: red;
+}
+
+#imagenpokemon {
+    width: 50%; /* para cambiar el tamaño de la imagen */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contenido {
+    /*display: flex;*/
+    background: #ffffff;
+    border-radius: 1%;
+    border: 2px solid #3565AE; /* Agrega un borde azul alrededor del botón */
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #3565AE;
+    margin-top: 10px;
+    display: none; /* none para que no se muestre, block lo muestra */
+}
+
+.descripción, .habilidad, .movimiento, .evolucion{
+    align-self: flex-start;
+    margin-bottom: -10px;
+}
+
+.evolucion{
+    display: none;;
+}
+
+.nombre{
+    align-self: center;
+    margin-top: -5px;
+}
+
+.boton-evolucionar button {
+    background-color: #3565AE;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5%;
+
+}
+.boton-evolucionar {
+    margin-top: 20px; /* Ajusta esto para cambiar el espacio entre el botón y el elemento anterior */
+    display: none;
+}
+
+.inicio {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}

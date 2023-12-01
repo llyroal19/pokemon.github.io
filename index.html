@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokemon</title>
+        <link rel="stylesheet" href="estilos.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+        <script src="script.js" defer></script>
+    </head>
+    <div class="inicio">
+        <a href="#" onclick="reiniciar();">Inicio</a>
+    </div>
+    <body>
+        <div class="titulo">
+            <img src="Pokemon_logo.png" alt="Imagen" id="logopokemon">
+        </div>
+        <div class="buscar">
+            <input type="text" placeholder="..." spellcheck="false">
+            <button><img src="search.png"> </button>
+        </div>
+        <div class="error">
+            <p>Nombre del Pokemon incorrecto</p>
+        </div>
+        <div class="contenido">
+            <h2 class="nombre">Nombre del Pokemon</h2>
+            <img src="pokemon.png" alt="Imagen" id="imagenpokemon">
+            <h4 class="descripcion">Descripción del Pokemon</h2>
+            <h4 class="habilidad">Habilidad del Pokemon</h2>
+            <h4 class="movimiento">Movimiento del Pokemon</h2>
+            <h4 class="evolucion">Evolución del Pokemon</h2>
+        </div>
+        <div class="boton-evolucionar">
+            <button>¡Evolucionar!</button>
+        </div>
+    </body>
+</html>
